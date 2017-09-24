@@ -11,26 +11,31 @@ import XCTest
 
 class CarpeDiemTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    //MARK: Quote Class Tests
+    
+    // Confirm that the Quote initializer returns a Quote object when passed valid parameters.
+    func testMealInitializationSucceeds() {
+        
+        // Quote with author and body
+        let authorAndBodyQuote = Quote.init(author: "Gandhi", body: "Be the change you wish to see in the world.")
+        XCTAssertNotNil(authorAndBodyQuote)
+        
+        // Missing author
+        let missingAuthorQuote = Quote.init(author: "", body: "A year from now, you'll wish you had started today")
+        XCTAssertNotNil(missingAuthorQuote)
+        XCTAssert(missingAuthorQuote?.author == "Anonymous")
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testMealInitializationFails(){
+        // Missing body
+        let missingBody = Quote.init(author: "Gandhi", body: "")
+        XCTAssertNil(missingBody)
+        
+        // Missing body and author
+        let missingBodyAndAuthor = Quote.init(author: "", body: "")
+        XCTAssertNil(missingBodyAndAuthor)
+        
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
 }

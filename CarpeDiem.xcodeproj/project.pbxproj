@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072066B01E5107DA00BB6273 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072066AF1E5107DA00BB6273 /* Quote.swift */; };
+		072066B21E51173F00BB6273 /* QuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072066B11E51173F00BB6273 /* QuoteTableViewCell.swift */; };
+		072066B81E511A9500BB6273 /* QuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072066B71E511A9500BB6273 /* QuoteTableViewController.swift */; };
 		07C3DF141E34480F004C3A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3DF131E34480F004C3A26 /* AppDelegate.swift */; };
-		07C3DF161E34480F004C3A26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3DF151E34480F004C3A26 /* ViewController.swift */; };
+		07C3DF161E34480F004C3A26 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3DF151E34480F004C3A26 /* QuoteViewController.swift */; };
 		07C3DF191E34480F004C3A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C3DF171E34480F004C3A26 /* Main.storyboard */; };
 		07C3DF1B1E34480F004C3A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C3DF1A1E34480F004C3A26 /* Assets.xcassets */; };
 		07C3DF1E1E34480F004C3A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C3DF1C1E34480F004C3A26 /* LaunchScreen.storyboard */; };
@@ -26,9 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		072066AF1E5107DA00BB6273 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		072066B11E51173F00BB6273 /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteTableViewCell.swift; sourceTree = "<group>"; };
+		072066B71E511A9500BB6273 /* QuoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteTableViewController.swift; sourceTree = "<group>"; };
 		07C3DF101E34480F004C3A26 /* CarpeDiem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarpeDiem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C3DF131E34480F004C3A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07C3DF151E34480F004C3A26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07C3DF151E34480F004C3A26 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		07C3DF181E34480F004C3A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07C3DF1A1E34480F004C3A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C3DF1D1E34480F004C3A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				07C3DF131E34480F004C3A26 /* AppDelegate.swift */,
-				07C3DF151E34480F004C3A26 /* ViewController.swift */,
+				07C3DF151E34480F004C3A26 /* QuoteViewController.swift */,
+				072066AF1E5107DA00BB6273 /* Quote.swift */,
 				07C3DF171E34480F004C3A26 /* Main.storyboard */,
+				072066B71E511A9500BB6273 /* QuoteTableViewController.swift */,
+				072066B11E51173F00BB6273 /* QuoteTableViewCell.swift */,
 				07C3DF1A1E34480F004C3A26 /* Assets.xcassets */,
 				07C3DF1C1E34480F004C3A26 /* LaunchScreen.storyboard */,
 				07C3DF1F1E34480F004C3A26 /* Info.plist */,
@@ -201,8 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07C3DF161E34480F004C3A26 /* ViewController.swift in Sources */,
+				072066B21E51173F00BB6273 /* QuoteTableViewCell.swift in Sources */,
+				07C3DF161E34480F004C3A26 /* QuoteViewController.swift in Sources */,
+				072066B01E5107DA00BB6273 /* Quote.swift in Sources */,
 				07C3DF141E34480F004C3A26 /* AppDelegate.swift in Sources */,
+				072066B81E511A9500BB6273 /* QuoteTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 				07C3DF2F1E34480F004C3A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07C3DF301E34480F004C3A26 /* Build configuration list for PBXNativeTarget "CarpeDiemTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				07C3DF321E34480F004C3A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
